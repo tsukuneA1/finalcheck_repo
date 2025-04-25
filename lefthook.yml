@@ -1,7 +1,7 @@
 pre-push:
   commands:
     abort-on-main:
-      run: ./pre-push-check.sh
+      run: bash ./pre-push-check.sh
 
 pre-commit:
   stylelint:
