@@ -1,0 +1,11 @@
+pre-push:
+  commands:
+    abort-on-main:
+      run: bash ./pre-push-check.sh
+
+pre-commit:
+  stylelint:
+    run: npx stylelint "**/*.css"
+  prettier:
+    run: npx prettier --write finalcheck.html, finalcheck.css
+    include: "**/*.{html, css}"
