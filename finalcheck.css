@@ -1,0 +1,551 @@
+/*-----------------------------------------------
+ブロックの基底要素
+-----------------------------------------------*/
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: "Noto Sans", serif;
+}
+
+a {
+  color: rgba(0, 0, 0, 1);
+}
+
+body * {
+  font-family: "Heebo";
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  font-family: "Heebo";
+}
+
+h1 {
+  font-family: "Heebo";
+}
+
+img {
+  width: 100%;
+}
+
+/* header */
+header {
+  justify-content: right;
+  display: flex;
+  padding: 3% 3%;
+  position: sticky;
+  top: 0vh;
+  z-index: 100;
+}
+
+.links {
+  justify-content: right;
+  display: flex;
+}
+
+header a {
+  display: inline-block;
+  margin-right: 2%;
+  margin-left: 25px;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Heebo";
+}
+
+.nav {
+  display: none;
+}
+
+/* introduction */
+.introduction {
+  margin-top: 5%;
+  margin-bottom: 7%;
+  padding: 0 10%;
+}
+
+.top {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.introduction-sentence {
+  width: 65rem;
+  margin-top: 5%;
+  padding-right: 15%;
+}
+
+.introduction-sentence p {
+  font-size: 16px;
+}
+
+.introduction h1 {
+  font-size: 2.5em;
+  margin-bottom: 2%;
+}
+
+.img-container {
+  justify-content: right;
+  display: flex;
+}
+
+.introduction img {
+  width: 21vw;
+  height: 21vw;
+  object-fit: cover;
+  border-radius: 100%;
+  overflow: hidden;
+  z-index: 0;
+  display: inline-block;
+  position: relative;
+}
+
+.img-container::after {
+  content: "";
+  display: inline-block;
+  width: 21vw;
+  height: 21vw;
+  background-color: rgba(237, 247, 250, 1);
+  position: absolute;
+  z-index: -5;
+  border-radius: 100%;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.introduction a {
+  display: inline-block;
+  background-color: rgba(255, 100, 100, 1);
+  color: white;
+  font-size: 20px;
+  padding: 1.5%;
+  border-radius: 2px;
+  margin-top: 40px;
+}
+
+/* posts */
+.posts {
+  background-color: rgba(237, 247, 250, 1);
+  padding: 0 10%;
+}
+
+.tags {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+
+.tags a {
+  color: rgba(0, 168, 204, 1);
+}
+
+.tags h3 {
+  font-size: 2.2rem;
+  font-weight: normal;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 50%;
+  padding: 3% 4%;
+  background-color: white;
+  margin-bottom: 5%;
+}
+
+.one {
+  margin-right: 1%;
+}
+
+.two {
+  margin-left: 1%;
+}
+
+.card h2 {
+  font-size: 2.5rem;
+}
+
+.date {
+  display: flex;
+  margin: 5% 0;
+}
+
+.date h2 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.border {
+  margin: 0 5%;
+}
+
+/* feature */
+.featured {
+  padding: 0 10%;
+}
+
+.featured-card {
+  display: flex;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+}
+
+.featured-one {
+  padding-bottom: 2%;
+}
+
+.featured-two {
+  padding: 4% 0;
+}
+
+.featured h3 {
+  font-size: 2.1rem;
+  margin: 3% 0;
+  font-weight: 400;
+}
+
+.featured-card img {
+  width: 25rem;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.explaination {
+  padding-right: 10%;
+}
+
+.sentence {
+  margin-left: 2%;
+}
+
+.flex {
+  display: flex;
+}
+
+.year {
+  padding: 0 1%;
+  border-radius: 9999px;
+  width: min-content;
+  height: fit-content;
+  background-color: rgba(20, 40, 80, 1);
+  color: white;
+  margin-right: 20px;
+}
+
+.subtitle {
+  color: rgba(134, 149, 164, 1);
+  font-size: 20px;
+}
+
+.featured h2 {
+  font-size: 30px;
+}
+
+.space {
+  margin: 3% 0;
+}
+
+.space {
+  font-size: 2.1rem;
+}
+
+i {
+  padding: 0 2%;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  margin: 3% 0;
+  padding: 3% 0;
+}
+
+.follow-me {
+  margin-top: 8%;
+  display: flex;
+  justify-content: center;
+  padding: 0 5%;
+}
+
+.fa-brands {
+  font-size: 3.5rem;
+}
+
+footer p {
+  margin-top: 3%;
+  color: rgba(33, 36, 61, 1);
+}
+/* responsive */
+
+@media screen and (max-width: 768px) {
+  body * {
+    font-family: "Heebo";
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin: 0;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .nav {
+    display: inline-block;
+  }
+
+  .drawer_hidden {
+    display: none;
+  }
+
+  .drawer_open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  .drawer_open span,
+  .drawer_open span:before,
+  .drawer_open span:after {
+    content: "";
+    display: block;
+    height: 2.3px;
+    width: 40px;
+    border-radius: 3px;
+    background: #333;
+    transition: 0.5s;
+    position: absolute;
+  }
+
+  .drawer_open span:before {
+    bottom: 10px;
+  }
+
+  .drawer_open span:after {
+    top: 10px;
+  }
+
+  #drawer_input:checked ~ .drawer_open span {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  #drawer_input:checked ~ .drawer_open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+
+  #drawer_input:checked ~ .drawer_open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  .one,
+  .two {
+    display: inline-block;
+    margin-left: 0;
+  }
+
+  .nav_content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    opacity: 0.8;
+    z-index: 99;
+    background: #fff;
+    transition: 0.5s;
+  }
+
+  .nav_list {
+    list-style: none;
+  }
+
+  #drawer_input:checked ~ .nav_content {
+    left: 0;
+  }
+
+  .introduction {
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  .introduction p {
+    font-size: 16px;
+  }
+
+  .img-container {
+    display: inline-flex;
+    width: 70vw;
+    height: 80vw;
+  }
+
+  .img-container img {
+    width: 70vw;
+    height: 70vw;
+  }
+
+  .introduction {
+    padding: 0 5%;
+  }
+
+  .introduction .img-container::after {
+    content: "";
+    display: inline-block;
+    width: 70vw;
+    height: 70vw;
+    background-color: rgba(237, 247, 250, 1);
+    position: absolute;
+    z-index: -5;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+
+  .introduction-sentence {
+    width: 100%;
+    padding: 0;
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+
+  .introduction h1 {
+    font-size: 32px;
+    padding: 0 5%;
+    margin-bottom: 5%;
+  }
+
+  .introduction a {
+    padding: 3% 7%;
+  }
+
+  .top {
+    justify-content: center;
+    display: inline-block;
+  }
+
+  .posts {
+    padding: 2% 3%;
+    padding-bottom: 8%;
+  }
+
+  .tags {
+    justify-content: center;
+  }
+
+  .tags h3 {
+    margin: 5% 0;
+    font-size: 18px;
+  }
+
+  .cards {
+    display: inline-block;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    margin-right: 0;
+    padding: 5% 3%;
+  }
+
+  .featured-card {
+    display: block;
+  }
+
+  .cards h2 {
+    font-size: 22px;
+  }
+
+  .date h2 {
+    font-size: 16px;
+  }
+
+  .tags,
+  .featured h3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tags a {
+    display: none;
+  }
+
+  .year {
+    padding: 0 4%;
+    border-radius: 9999px;
+    width: min-content;
+    height: fit-content;
+    background-color: rgba(20, 40, 80, 1);
+    color: white;
+    margin-right: 20px;
+  }
+
+  .featured-two {
+    display: none;
+  }
+
+  .featured h3 {
+    font-size: 18px;
+    margin: 10% 0;
+  }
+
+  .featured h2 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  footer {
+    margin-top: 60%;
+  }
+
+  .follow-me {
+    margin-bottom: 10%;
+  }
+
+  .featured {
+    padding: 0 2%;
+  }
+
+  .explaination {
+    margin-bottom: 3%;
+    padding: 0;
+  }
+
+  .featured-card img {
+    width: 100%;
+  }
+
+  i {
+    width: 30px;
+    padding: 0 10%;
+  }
+
+  footer p {
+    margin-bottom: 15%;
+  }
+
+  .fa-brands {
+    font-size: 2em;
+  }
+}
