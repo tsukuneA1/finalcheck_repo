@@ -5,7 +5,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
-  font-family: "Noto Sans", serif;
+  font-family: 'Noto Sans', serif;
 }
 
 a {
@@ -13,7 +13,7 @@ a {
 }
 
 body * {
-  font-family: "Heebo";
+  font-family: 'Heebo';
   box-sizing: border-box;
   text-decoration: none;
   font-size: 16px;
@@ -26,11 +26,11 @@ body {
 
 p {
   margin: 0;
-  font-family: "Heebo";
+  font-family: 'Heebo';
 }
 
 h1 {
-  font-family: "Heebo";
+  font-family: 'Heebo';
 }
 
 img {
@@ -58,7 +58,7 @@ header a {
   margin-left: 25px;
   font-size: 2rem;
   font-weight: 600;
-  font-family: "Heebo";
+  font-family: 'Heebo';
 }
 
 .nav {
@@ -110,7 +110,7 @@ header a {
 }
 
 .img-container::after {
-  content: "";
+  content: '';
   display: inline-block;
   width: 21vw;
   height: 21vw;
@@ -290,7 +290,7 @@ footer p {
 
 @media screen and (max-width: 768px) {
   body * {
-    font-family: "Heebo";
+    font-family: 'Heebo';
     box-sizing: border-box;
     text-decoration: none;
     font-size: 1.6rem;
@@ -323,7 +323,7 @@ footer p {
   .drawer_open span,
   .drawer_open span:before,
   .drawer_open span:after {
-    content: "";
+    content: '';
     display: block;
     height: 2.3px;
     width: 40px;
@@ -407,7 +407,7 @@ footer p {
   }
 
   .introduction .img-container::after {
-    content: "";
+    content: '';
     display: inline-block;
     width: 70vw;
     height: 70vw;
