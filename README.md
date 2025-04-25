@@ -14,7 +14,8 @@ npm run fix
 ```
 ### finalcheck.html, finalcheck.cssに取り組む際の注意
 コーディングに際し以下のマニュアルに従ってください
-[Webチームコーディングマニュアル](https://www.notion.so/7d00c5004b1d426db51ed6ba647e338b?p=4cbfbb521256476b80e6aea309cb4920&pm=s)
+
+[Webチームコーディングマニュアル](https://www.notion.so/Web-HTML-CSS-4cbfbb521256476b80e6aea309cb4920)
 ### GitHubへのcommit/pushの方法
 このプロジェクトではlefthookというライブラリを利用していて、pushの際にはmainブランチ以外でpushする必要があります。
 Issueの内容を解決出来たら以下のGitHubコマンドを順に実行してください。
