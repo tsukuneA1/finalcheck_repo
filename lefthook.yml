@@ -7,5 +7,5 @@ pre-commit:
   stylelint:
     run: npx stylelint "**/*.css"
   prettier:
-    run: npx prettier --write finalcheck.html, finalcheck.css
-    include: "**/*.{html, css}"
+    run: npx prettier --write .
+    include: '**/*.{html, css}'

@@ -1,4 +1,4 @@
-﻿# finalcheck_repo
+# finalcheck_repo
 ## はじめに
 ### このリポジトリについて
 このリポジトリは、WINCのFinalCheckの課題として使用します。用意されているIssueを順番に解決していく形で課題を進めてください。
