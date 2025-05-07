@@ -27,3 +27,80 @@ p {
 img {
   width: 100%;
 }
+ul {
+  list-style: none;
+  padding: 0;
+}
+a{
+  color: black;
+}
+
+/* ここからヘッダー */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  z-index: 10;
+}
+
+#p-header_pc{
+  padding: 27px 60px;
+  display: flex;
+  justify-content: end;
+}
+
+#p-header_pc ul{
+  width: 236px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#p-header_pc a{
+  font-size: 20px;
+  font-weight: medium;
+}
+
+#p-hamburger_sp{
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+
+  #p-header_pc{
+    display: none;
+  }
+
+  #p-hamburger_sp {
+    display: block;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 0 18px 0 auto;
+    width: 30px;
+    height: 50px;
+  }
+
+  .icon span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: ease 0.75s;
+  }
+
+  .icon span:nth-of-type(1) {
+    top: 20px;
+  }
+
+  .icon span:nth-of-type(2) {
+    top: 28px;
+  }
+
+  .icon span:nth-of-type(3) {
+    bottom: 12px;
+  }
+}
+/* ここからまでヘッダー */
