@@ -31,12 +31,12 @@ ul {
   list-style: none;
   padding: 0;
 }
-a{
+a {
   color: black;
 }
 
 /* ここからヘッダー */
-header{
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -46,30 +46,29 @@ header{
   z-index: 10;
 }
 
-#p-header_pc{
+#p-header_pc {
   padding: 27px 60px;
   display: flex;
   justify-content: end;
 }
 
-#p-header_pc ul{
+#p-header_pc ul {
   width: 236px;
   display: flex;
   justify-content: space-between;
 }
 
-#p-header_pc a{
+#p-header_pc a {
   font-size: 20px;
   font-weight: medium;
 }
 
-#p-hamburger_sp{
+#p-hamburger_sp {
   display: none;
 }
 
-@media screen and (max-width: 768px){
-
-  #p-header_pc{
+@media screen and (max-width: 768px) {
+  #p-header_pc {
     display: none;
   }
 
