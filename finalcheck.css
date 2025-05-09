@@ -53,9 +53,10 @@ header {
 }
 
 #p-header_pc ul {
-  width: 236px;
-  display: flex;
   justify-content: space-between;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 33px;
 }
 
 #p-header_pc a {
