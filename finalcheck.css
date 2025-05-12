@@ -124,6 +124,10 @@ footer {
   margin: 0 auto 26px auto;
 }
 
+.fa-brands {
+  font-size: 30px;
+}
+
 footer p {
   font-size: 14px;
   font-family: 'Heebo';
