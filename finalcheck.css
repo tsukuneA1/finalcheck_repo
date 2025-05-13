@@ -118,13 +118,13 @@ footer {
 }
 
 .footer__sns-icons {
-  width: 230px;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  gap: 35px;
+  grid-auto-flow: column;
   margin: 0 auto 26px auto;
 }
 
-.footer__sns-icons i {
+.footer__sns-icons span {
   font-size: 30px;
 }
 
