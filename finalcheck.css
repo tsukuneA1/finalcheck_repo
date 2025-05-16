@@ -104,3 +104,32 @@ header {
   }
 }
 /* ここからまでヘッダー */
+
+/* ここからフッター */
+footer {
+  height: 182px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__container {
+  text-align: center;
+}
+
+.footer__sns-icons {
+  display: grid;
+  gap: 35px;
+  grid-auto-flow: column;
+  margin: 0 auto 26px auto;
+}
+
+.footer__sns-icons span {
+  font-size: 30px;
+}
+
+footer p {
+  font-size: 14px;
+  font-family: 'Heebo';
+}
+/* ここまでフッター */
